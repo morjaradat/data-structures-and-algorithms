@@ -26,9 +26,9 @@ For example, typeNum([1, 'bob' ,3]) returns [1,3].
 const typeNum = (arr) => {
   // Solution code here...
   let newArr1=  arr.filter(num1 =>{
-    if (num1 === Number(num1)){
-      return num1;
-    }
+
+    return num1 === Number(num1);
+
   });
   return newArr1;
 };
