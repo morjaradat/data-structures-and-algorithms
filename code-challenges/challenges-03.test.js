@@ -44,7 +44,8 @@ For example, containsAnd(['panda', 'ran', 'and']) returns ['panda', 'and'].
 
 const containsAnd = (arr) => {
   // Solution code here...
-  let newArr2=  arr.filter(str => { return !(str === 'ran'|| str === 'banana'||str === 'bob'||str === 'xyz');});
+  let newArr2=  arr.filter(str => { return (str.includes('and'));
+  });
   return newArr2;
 };
 
